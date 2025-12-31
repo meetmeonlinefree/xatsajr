@@ -1,1 +1,196 @@
-Хатсайр
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Хатсайр Водитель</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Хатсайр Водитель — приложение для водителей маршруток. Автоматическая передача GPS-локации в систему Хатсайр">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
+        body { background:#f3f4f6; color:#111827; }
+
+        header {
+            background: linear-gradient(135deg,#0f172a,#1e293b);
+            color:white;
+            padding:90px 20px;
+            text-align:center;
+        }
+
+        header h1 {
+            font-size:42px;
+            font-weight:700;
+        }
+
+        header p {
+            margin-top:18px;
+            font-size:18px;
+            opacity:.9;
+            max-width:760px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .btn {
+            display:inline-block;
+            margin-top:35px;
+            padding:14px 36px;
+            background:#22c55e;
+            color:#064e3b;
+            border-radius:40px;
+            font-weight:600;
+            text-decoration:none;
+            transition:.3s;
+        }
+
+        .btn:hover {
+            transform:translateY(-3px);
+            box-shadow:0 15px 30px rgba(0,0,0,.25);
+        }
+
+        section {
+            max-width:1200px;
+            margin:auto;
+            padding:90px 20px;
+        }
+
+        .features {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:35px;
+        }
+
+        .feature {
+            background:white;
+            border-radius:22px;
+            padding:38px 30px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,.08);
+        }
+
+        .feature span {
+            font-size:42px;
+        }
+
+        .feature h3 {
+            margin:18px 0 10px;
+            font-size:20px;
+        }
+
+        .feature p {
+            color:#4b5563;
+            font-size:15px;
+        }
+
+        .info {
+            display:flex;
+            flex-wrap:wrap;
+            gap:60px;
+            align-items:center;
+        }
+
+        .info img {
+            max-width:320px;
+            border-radius:26px;
+            box-shadow:0 25px 45px rgba(0,0,0,.3);
+        }
+
+        .cta {
+            background:linear-gradient(135deg,#0f172a,#020617);
+            color:white;
+            border-radius:28px;
+            padding:80px 20px;
+            text-align:center;
+        }
+
+        footer {
+            text-align:center;
+            padding:35px;
+            font-size:14px;
+            color:#6b7280;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Хатсайр Водитель</h1>
+    <p>
+        Приложение для водителей маршруток, которое автоматически
+        передаёт текущее местоположение транспортного средства
+        в систему Хатсайр во время поездки.
+    </p>
+
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.neuronit.xatsajr">
+        Скачать для водителей
+    </a>
+</header>
+
+<section>
+    <h2 style="text-align:center;margin-bottom:55px;">
+        Основные функции
+    </h2>
+
+    <div class="features">
+        <div class="feature">
+            <span>🚌</span>
+            <h3>Отслеживание маршрута</h3>
+            <p>Передача движения маршрутки по заданному маршруту</p>
+        </div>
+
+        <div class="feature">
+            <span>🔄</span>
+            <h3>Автообновление GPS</h3>
+            <p>Автоматическая отправка координат без участия водителя</p>
+        </div>
+
+        <div class="feature">
+            <span>🔋</span>
+            <h3>Экономия батареи</h3>
+            <p>Оптимизировано для работы в фоновом режиме</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="info">
+        <div>
+            <h2>Работает в фоне</h2>
+            <p style="margin-top:18px;font-size:18px;">
+                Приложение запускается перед поездкой и
+                продолжает работу в фоновом режиме,
+                не мешая водителю и не расходуя заряд аккумулятора.
+            </p>
+
+            <p style="margin-top:10px;color:#6b7280;">
+                Используется только водителями маршруток.
+            </p>
+        </div>
+
+        <img src="https://worldinfotravel.com/wp-content/uploads/2021/11/map-city-khujand-1225.webp" alt="Хатсайр Водитель">
+    </div>
+</section>
+
+<section>
+    <div class="cta">
+        <h2>Часть системы Хатсайр</h2>
+        <p style="margin-top:12px;">
+            Передаёт данные для отображения маршруток пассажирам
+            в режиме реального времени.
+        </p>
+
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.neuronit.xatsajr">
+            Установить приложение
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Хатсайр · Приложение для водителей маршруток
+</footer>
+
+</body>
+</html>
